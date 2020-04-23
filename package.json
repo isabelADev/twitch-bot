@@ -1,0 +1,15 @@
+{
+  "name": "twitch-bot",
+  "version": "0.0.1",
+  "description": "A twitch bot that retrieves information about objects applied to streamer's health.",
+  "main": "main.js",
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isabel Almellones",
+  "license": "ISC"
+}
