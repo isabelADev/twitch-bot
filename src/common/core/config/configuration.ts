@@ -9,6 +9,6 @@ const ENV = process.env.NODE_ENV;
 const YAML_CONFIG_FILENAME = !ENV ? 'config.yaml' : `${ENV}.config.yaml`;
 export default () => {
     return yaml.load(
-        readFileSync(join('./src/', YAML_CONFIG_FILENAME), 'utf8'),
+        readFileSync(join('./src/environment/', YAML_CONFIG_FILENAME), 'utf8'),
     ) as Record<string, any>;
 };
