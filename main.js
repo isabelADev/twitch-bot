@@ -1,11 +1,11 @@
 const tmi = require('tmi.js');
 
 // Define configuration options
-const opts = {
+const opts = const opts = {
     identity: {
-    username: '',
-    password: ''
-},
+        username: '',
+        password: ''
+    },
     channels: [ '' ]
 };
 

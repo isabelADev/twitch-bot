@@ -1,0 +1,4 @@
+/node_modules/
+/src/environment/environment.dev.ts
+/src/environment/development.local.config.yaml
+/dist/
