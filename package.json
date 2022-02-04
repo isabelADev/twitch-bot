@@ -1,10 +1,10 @@
 {
   "name": "project",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "An API to connect twitch messaging services and other tools.",
+  "author": "Isabel Almellones",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
