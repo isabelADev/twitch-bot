@@ -1,11 +1,11 @@
 import {Injectable} from '@nestjs/common';
 import {TwitchBotService} from "./services/twitch-bot.service";
-import {WebSocketPlainService} from "./services/web-socket-plain.service";
+import {MessageExchangeGateway} from "./gateways/message-exchange.gateway";
 
 @Injectable()
 export class AppService {
 
-    constructor(private wsService: WebSocketPlainService) {
+    constructor(private wsService: MessageExchangeGateway) {
     }
 
     getHello(): string {

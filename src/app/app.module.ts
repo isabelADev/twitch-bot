@@ -4,7 +4,8 @@ import {AppService} from './app.service';
 import {TwitchBotService} from "./services/twitch-bot.service";
 import {ConfigModule} from "@nestjs/config";
 import configuration from "../common/core/config/configuration";
-import {WebSocketPlainService} from "./services/web-socket-plain.service";
+import {MessageExchangeGateway} from "./gateways/message-exchange.gateway";
+import {LifeMeterService} from "./services/life-meter.service";
 
 @Module({
     imports: [
@@ -14,7 +15,7 @@ import {WebSocketPlainService} from "./services/web-socket-plain.service";
         })
     ],
     controllers: [AppController],
-    providers: [AppService, TwitchBotService, WebSocketPlainService],
+    providers: [AppService, TwitchBotService, MessageExchangeGateway, LifeMeterService],
 })
 export class AppModule {
 }
